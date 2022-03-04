@@ -22,7 +22,8 @@ class Btn(tk.Button):
     def initUI(self):
         self.btn = tk.Button(self.parent.btn_frame,
                              text=self.color[0],
-                             command=self.swap)
+                             command=self.swap,
+                             bg=self.color)
         self.btn.pack(side='left', padx=10)
 
     def swap(self):
