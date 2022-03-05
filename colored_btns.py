@@ -12,7 +12,6 @@ class MainWindow(tk.Tk):
 
 class Btn(tk.Button):
     def __init__(self, parent, color, lbl, ent):
-        super().__init__(parent)
         self.parent = parent
         self.color = color
         self.lbl = lbl
@@ -35,7 +34,6 @@ class Lable(tk.Label):
     def __init__(self, parent, text):
         self.text = text
         self.parent = parent
-        super().__init__(parent)
         self.initUI()
 
     def initUI(self):
@@ -51,7 +49,6 @@ class Lable(tk.Label):
 class Entre(tk.Entry):
     def __init__(self, parent):
         self.parent = parent
-        super().__init__(parent)
         self.initUI()
 
     def initUI(self):
